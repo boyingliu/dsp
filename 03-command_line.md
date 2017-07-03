@@ -19,7 +19,14 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > * show current working directory path ```pwd```
+* creating a directory ```mkdir directory_name```
+* deleting a directory ```rmdir directory_name```
+* creating a file using `touch` command ```touch file_name```
+* deleting a file ``` rm file-name```
+* renaming a file ``` mv file_1 file_2```
+* listing hidden files ```ls -a```
+* copying a file from one directory to another ``` cp directory_1\file directory_2\.```
 
 ---
 
@@ -34,7 +41,8 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > [intro](https://www.tecmint.com/15-basic-ls-command-examples-in-linux/)
+> > [all] (http://man.openbsd.org/ls)
 
 ---
 
@@ -42,7 +50,7 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ```ls -t```
 
 ---
 
@@ -50,7 +58,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> >  xargs - [build and execute command lines from standard input] (http://linuxcommand.org/man_pages/xargs1.html) and [example] (http://www.thegeekstuff.com/2013/12/xargs-examples/)
 
  
 
