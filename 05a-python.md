@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists are mutable but tuples are not. Tuples bececause [lists cannot provide a valid hash method](https://wiki.python.org/moin/DictionaryKeys)
 
 ---
 
@@ -20,15 +20,30 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> Both represent an union of elements. 
+`set`: Unordered collections of unique elements
+```a = set('apple')
+   b = set('banana')
+   a-b
+```
+`lists`: ordered collections of elementsf
+``` squares = []
+    for x in range(10):
+       squares.append(x**2)
+```
+Set is faster to determine if an element is in a set.
 ---
 
 ### Q3. Lambda Function
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> [While normal functions are defined using the def keyword, in Python anonymous functions are defined using the lambda keyword.](https://www.programiz.com/python-programming/anonymous-function)
+```
+mylist = [3,6,3,2,4,8,23]
+sorted(mylist, key=lambda x: x%2==0)
+```
+[interesting intro](https://stackoverflow.com/questions/8966538/syntax-behind-sortedkey-lambda)
 
 ---
 
@@ -36,7 +51,26 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> map:```number_list = list(range(100))```
+```
+square_list = map(lambda x: x**2, number_list)
+square_list = [x**2 for x in numbers]
+```
+filter:
+```
+odd_list = filter(lambda x: 2x+1, number_list)
+odd_list = [2x+1 for x in number_list]
+```
+set comprehension
+```{x for x in 'abracadabra' if x not in 'abc'}```
+dictionary comprehension 
+```{x: x**2 for x in (2, 4, 6)}
+```
+[intereseint example](http://www.diveintopython3.net/comprehensions.html)
+```
+{value:key for key, value in a_dict.items()}
+```
+[read this](https://martin-thoma.com/python-map-reduce-filter/) and [this](https://docs.python.org/3/tutorial/datastructures.html)
 
 ---
 
