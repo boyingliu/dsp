@@ -66,7 +66,7 @@ set comprehension
 dictionary comprehension 
 ```{x: x**2 for x in (2, 4, 6)}
 ```
-[intereseint example](http://www.diveintopython3.net/comprehensions.html)
+[intereseing example](http://www.diveintopython3.net/comprehensions.html)
 ```
 {value:key for key, value in a_dict.items()}
 ```
